@@ -17,11 +17,12 @@ function reset() {
   result = "";
   playerDisplay.textContent = `PLAYER : ${playerChoice}`;
   computerDisplay.textContent = `COMPUTER : ${computerChoice}`;
-  resultDisplay.textContent = result;
-  resultDisplay.classList.remove("resultDisplay") ;
+  resultDisplay.textContent = "";
+  resultDisplay.style.color = ""; // Reset text color
   playerScoreDisplay.textContent = `Player Score : ${playerScore}`;
   computerScoreDisplay.textContent = `Computer Score : ${computerScore}`;
 }
+
 
 function playGame(playerChoice) {
   const computerChoice = choices[Math.floor(Math.random() * 3)];
