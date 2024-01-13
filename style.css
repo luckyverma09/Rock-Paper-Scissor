@@ -2,24 +2,26 @@
   padding: 0;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
+  background-color: #E6E6EA;
 }
 
 .navbar {
   height: 10vh;
-  background: rgb(165, 146, 146);
+  background: #2AB7CA;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 h1 {
+  background: #2AB7CA;
   font-weight: 900;
   font-size: 2rem;
   color: black;
+
 }
 
 .buttons {
-  background-color: rgb(229, 201, 201);
   height: 30vh;
   display: flex;
   flex-direction: row;
@@ -51,21 +53,21 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
 }
 
-.result {
+.resultDisplay {
   height: 10vh;
   width: 100%;
-  background-color: lime;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
   font-size: 9vmin;
+  
 }
-.score {
+.scoreDisplay {
   height: 10vh;
-  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,4 +76,28 @@ h1 {
 
 p {
   font-size: 1.3rem;
+}
+
+.reset {
+  display: flex;
+  height: 5vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.greenText{
+  color: rgb(141, 230, 141);
+}
+
+.redText{
+  color: rgb(230, 86, 38);
+}
+.blackText{
+  color: black;
 }
