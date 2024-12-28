@@ -1,42 +1,52 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Courier New", Courier, monospace;
-  background-color: #E6E6EA;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7FAFC;
 }
 
 .navbar {
   height: 10vh;
-  background: #2AB7CA;
+  background: linear-gradient(135deg, #2AB7CA, #4ECDC4);
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  background: #2AB7CA;
   font-weight: 900;
   font-size: 2.5rem;
   color: black;
-
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .buttons {
-  height: 30vh;
+  height: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .button {
   cursor: pointer;
-  height: 10rem;
+  height: 12rem;
+  width: 12rem;
   border: none;
-  border-radius: 10rem;
-  width: 10rem;
+  border-radius: 50%;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .buttons img {
@@ -47,25 +57,23 @@ h1 {
 }
 
 .choice {
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 1rem;
+  text-align: center;
   font-size: 1.5rem;
+  color: #333;
 }
 
 .resultDisplay {
   height: 10vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 9vmin;
-  
+  font-size: 4rem;
+  color: #2F4858;
+  margin: 1rem 0;
 }
+
 .scoreDisplay {
   height: 10vh;
   display: flex;
@@ -76,28 +84,45 @@ h1 {
 
 p {
   font-size: 1.3rem;
+  color: #555;
 }
 
 .reset {
   display: flex;
   height: 5vh;
-  width: 100%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
 }
-.btn{
+
+.btn {
   font-size: 1.4rem;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #4ECDC4, #2AB7CA);
+  color: white;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.greenText{
-  color: rgb(141, 230, 141);
+.btn:hover {
+  background: linear-gradient(135deg, #2AB7CA, #4ECDC4);
+  transform: translateY(-3px);
 }
 
-.redText{
-  color: rgb(230, 86, 38);
+.greenText {
+  color: #8DE68D;
+  font-weight: 700;
 }
-.blackText{
-  color: black;
+
+.redText {
+  color: #E65438;
+  font-weight: 700;
+}
+
+.blackText {
+  color: #2F4858;
+  font-weight: 600;
 }
